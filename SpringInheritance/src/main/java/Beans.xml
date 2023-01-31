@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="s1" class="com.spring.SpringInheritance.Student" abstract="true">
+  <property name="id" value="1"/>
+  <property name="fname" value="Amrit"/>
+  <property name="lname" value="prjpt" />
+  
+ 
+ </bean>
+ <bean id="s2" class="com.spring.SpringInheritance.Student" parent="s1">
+  
+  <property name="email" value="amritkp@gmail.com"/>
+ 
+ </bean>
+</beans>

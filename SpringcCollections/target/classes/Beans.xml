@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="p1" class="com.spring.SpringcCollections.Person">
+     <property name="pname" value="amrit"/>
+     <property name="age" value="22"/>
+     <property name="address" value="Sindarth"/>
+     
+ </bean>
+  <bean id="customer" class="com.spring.SpringcCollections.Customer">
+     <property name="lists">
+        <list>
+        <value>1</value>
+        <ref bean="p1"/>
+        <bean class="com.spring.SpringcCollections.Person">
+        
+         <property name="pname" value="nixx"/>
+     <property name="age" value="22"/>
+     <property name="address" value="malgaov"/> 
+     </bean>
+        
+        
+        </list>
+  </property>
+  </bean>
+</beans>
